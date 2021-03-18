@@ -1,26 +1,44 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "react-native-thebase",
+  "version": "1.0.0",
+  "description": "Basic RN Module",
+  "main": "dist/module/index.js",
+  "module": "dist/module/index.js",
+  "react-native": "dist/module/index.js",
+  "types": "dist/typescript/index.d.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "prepare": "bob build"
   },
+  "author": "c4co",
+  "license": "ISC",
   "dependencies": {
-    "expo": "~40.0.0",
-    "expo-status-bar": "~1.0.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
-    "react-native-web": "~0.13.12"
+    "polished": "^4.1.1",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "@babel/core": "~7.9.0",
-    "@types/react": "~16.9.35",
-    "@types/react-dom": "~16.9.8",
-    "@types/react-native": "~0.63.2",
-    "typescript": "~4.0.0"
+    "@babel/core": "^7.13.8",
+    "@react-native-community/bob": "^0.17.1",
+    "@types/react": "^17.0.2",
+    "@types/react-native": "^0.63.50",
+    "@types/styled-components": "^5.1.7",
+    "@types/styled-components-react-native": "^5.1.1",
+    "typescript": "^4.2.2"
   },
-  "private": true
+  "peerDependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz"
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "dist",
+    "targets": [
+      "module",
+      "typescript"
+    ]
+  }
 }
