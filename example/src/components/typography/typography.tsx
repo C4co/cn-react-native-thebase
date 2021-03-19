@@ -14,7 +14,6 @@ type TextProps = {
 export const Text = styled.Text<TextProps>`
   font-size: 15px;
   color: ${props => props.theme.COLORS.TEXT};
-  margin-bottom: 10px;
 
   ${props => props.color && css`
     color: ${props.color}
@@ -53,7 +52,6 @@ type TitleProps = {
 
 export const Title = styled(Text)<TitleProps>`
   color: ${props => props.theme.COLORS.TITLE};
-  font-size: 20px;
   font-weight: bold;
 
   ${props => props.color && css`

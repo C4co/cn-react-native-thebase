@@ -19,7 +19,7 @@ type ModalContentProps = {
 }
 
 const ModalContent = styled.ScrollView<ModalContentProps>`
-  background: white;
+  background: ${props => props.theme.COLORS.BACKGROUND};
   flex: 1px;
   ${props => props.padder && css`
     padding: 15px;
