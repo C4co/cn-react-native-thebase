@@ -8,10 +8,10 @@
 
 ✅ Suport Themes
 
-[Check the exemplo here!](https://expo.io/@carlosnc/projects/thebase)
+[Check the exemple(expo application)](https://expo.io/@carlosnc/projects/thebase)
 
 ```
-npm install cn-rn-thebase
+npm install cn-react-native-thebase
 ```
 
 ## Components
