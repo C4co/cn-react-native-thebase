@@ -1,31 +1,32 @@
 import { ThemeBase } from "./theme-type"
 
 export const DARK: ThemeBase = {
+  NAME: "DARK",
   COLORS: {
     // Default
-    BACKGROUND: "#ffffff",
-    PRIMARY: "#0066ff",
-    BORDER: "#dcdcdc",
+    BACKGROUND: "#1c222b",
+    PRIMARY: "#5789d4",
+    BORDER: "#2c3542",
 
     // Text
-    TEXT: "#525252",
-    TITLE: "#000000",
+    TEXT: "#748299",
+    TITLE: "#d3deef",
 
     // Button
-    BUTTON_BACKGROUND: "#000000",
-    BUTTON_TEXT: "#ffffff",
+    BUTTON_BACKGROUND: "#5789d4",
+    BUTTON_TEXT: "#1c222b",
 
     // Input
-    INPUT_BORDER: "#b3b3b3",
-    INPUT_TEXT: "#000000",
-    INPUT_BACKGROUND: "#ffffff",
-    INPUT_LABEL: "#000000",
-    INPUT_PLACEHOLDER: "#999999",
-    INPUT_ERROR: "#d02b2b",
+    INPUT_BORDER: "#28313e",
+    INPUT_TEXT: "#ffffff",
+    INPUT_BACKGROUND: "#28313e",
+    INPUT_LABEL: "#d3deef",
+    INPUT_PLACEHOLDER: "#59687a",
+    INPUT_ERROR: "#a15858",
 
     // Switch
-    SWITCH_TRACK: "#c2c2c2",
-    SWITCH_THUMB_OFF: "#666666",
-    SWITCH_THUMB_ON: "#0066ff"
+    SWITCH_TRACK: "#2c3542",
+    SWITCH_THUMB_OFF: "#404b5c",
+    SWITCH_THUMB_ON: "#5789d4"
   }
 }

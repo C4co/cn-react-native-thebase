@@ -12,8 +12,10 @@ type InputDataProps = {
 
 export const InputData = styled.TextInput<InputDataProps>`
   border: solid ${props => props.theme.COLORS.INPUT_BORDER} 1px;
+  background:  ${props => props.theme.COLORS.INPUT_BACKGROUND};
+  color: ${props => props.theme.COLORS.INPUT_TEXT};
   padding: 10px;
-  font-size: 16px;
+  font-size: 15px;
   border-radius: 3px;
   height: 45px;
   flex: 1;

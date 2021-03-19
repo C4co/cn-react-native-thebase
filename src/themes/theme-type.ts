@@ -1,4 +1,5 @@
 export interface ThemeBase{
+  NAME: string,
   COLORS: {
     // Default
     BACKGROUND: string

@@ -71,7 +71,7 @@ export function Button(props: ButtonProps){
   // Loading and outline
   if(props.loading && props.outline){
     return (
-      <ButtonOutline testID="button-outline-loading">
+      <ButtonOutline testID="button-outline-loading" activeOpacity={0.8}>
         <Load testID="button-load" color={theme.COLORS.BUTTON_BACKGROUND} />
       </ButtonOutline>
     )
