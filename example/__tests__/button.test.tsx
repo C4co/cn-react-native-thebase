@@ -1,8 +1,8 @@
 import React from "react"
 import "jest-styled-components"
 import { render } from "@testing-library/react-native"
-import { Button } from "../../components"
-import { LIGHT } from  "../../themes"
+import { Button } from "../src/components"
+import { LIGHT } from  "../src/themes"
 
 describe("Button test", () =>{
   test("Check initial rendering (solid button)", () => {
