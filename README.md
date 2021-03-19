@@ -1,4 +1,4 @@
-<h1> The Base </h1>
+<h1> React Native TheBase </h1>
 
 <p>
   Some basic components to start a new react native app
