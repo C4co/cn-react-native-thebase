@@ -6,66 +6,75 @@ import {
   Space
 } from "../../src"
 
-import styled from "styled-components/native"
+import styled, { css, useTheme } from "styled-components/native"
 
-const Block = styled.View`
+type BlockProps = {
+  color: string
+}
+
+const Block = styled.View<BlockProps>`
   flex: 1;
   height: 80px;
-  background: #cccccc;
+
+  ${props => props.color && css`
+    background-color: ${props.color};
+  `}
 `
 
 export function GridScreen(){
   const gridSize = 2
 
+  const theme = useTheme()
+
   return (
     <Container>
       <Content padder>
         <Row>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
         </Row>
 
         <Space size={gridSize}/>
 
         <Row>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
           <Space size={gridSize} horizontal/>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
         </Row>
 
         <Space size={gridSize}/>
 
         <Row>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
           <Space size={gridSize} horizontal/>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
           <Space size={gridSize} horizontal/>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
         </Row>
 
         <Space size={gridSize}/>
 
         <Row>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
           <Space size={gridSize} horizontal/>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
           <Space size={gridSize} horizontal/>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
           <Space size={gridSize} horizontal/>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
         </Row>
 
         <Space size={gridSize}/>
 
         <Row>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
           <Space size={gridSize} horizontal/>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
           <Space size={gridSize} horizontal/>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
           <Space size={gridSize} horizontal/>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
           <Space size={gridSize} horizontal/>
-          <Block/>
+          <Block color={theme.COLORS.PRIMARY} />
         </Row>
 
       </Content>

@@ -3,25 +3,47 @@ import {
   Container,
   Content,
   Text,
-  Title
+  Title,
+  Space
 } from "../../src"
 
 export function TypographyScreen(){
   return (
     <Container>
       <Content padder>
-        <Text lowercase> This is a simple text </Text>
-        <Text capitalize> This is a simple text </Text>
-        <Text uppercase> This is a simple text </Text>
-        <Text bold> This is a simple text </Text>
-        <Text color="#ff0066"> This is a simple text </Text>
-        <Text color="#00cc99"> This is a green text </Text>
-        <Text uppercase bold color="#ff0066"> This is a simple text </Text>
-        <Text fontSize={20} underline uppercase bold color="#ff0066">
-          This is a simple text
+        <Title fontSize={30}>
+          Big title
+        </Title>
+
+        <Space size={10} />
+
+        <Title fontSize={23}>
+          Middle title
+        </Title>
+
+        <Space size={10} />
+
+        <Title fontSize={18}>
+          Middle title
+        </Title>
+
+        <Space size={10} />
+
+        <Text>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </Text>
-        <Title>Hello world!</Title>
-        <Title color="red">Hello world!</Title>
+
+        <Space size={10} />
+
+        <Text>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore possimus nostrum magni reiciendis laboriosam rem quaerat fugit non laborum ea. Ipsa eum quia officia, deleniti consequuntur corporis? Eum, quo aperiam?
+        </Text>
+
+        <Space size={10} />
+
+        <Text>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore possimus nostrum magni reiciendis laboriosam rem quaerat fugit non laborum ea. Ipsa eum quia officia, deleniti consequuntur corporis? Eum, quo aperiam?
+        </Text>
       </Content>
     </Container>
   )

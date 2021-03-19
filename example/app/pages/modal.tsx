@@ -8,26 +8,24 @@ import {
 } from "../../src"
 
 export function ModalScreen(){
-  const [modal, setModal] = useState(false)
+  const [showModal, setShowModal] = useState(false)
 
   return (
     <Container>
       <Content padder>
-        <Text> Modal example </Text>
-
         <Modal
           padder
-          visible={modal}
+          visible={showModal}
           hardwareAccelerated={true}
           animationType="slide"
           onRequestClose={() => {
-            setModal(false)
+            setShowModal(false)
           }}>
 
-          <Button> button </Button>
+          <Button onPress={() => { setShowModal(false) }}> Close modal </Button>
         </Modal>
 
-        <Button onPress={() => { setModal(true) }} > Modal </Button>
+        <Button onPress={() => { setShowModal(true) }} > Open Modal </Button>
 
       </Content>
     </Container>

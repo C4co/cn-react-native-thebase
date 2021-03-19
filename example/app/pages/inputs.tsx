@@ -30,17 +30,6 @@ export function InputScreen(){
           <Input placeholder="Placeholder" />
         </Row>
 
-        <Space size={10}/>
-
-        <Row>
-          <Input placeholder="Placeholder" />
-          <Space horizontal size={10}/>
-          <Input placeholder="Placeholder" />
-          <Space horizontal size={10}/>
-          <Input placeholder="Placeholder" />
-          <Space horizontal size={10}/>
-          <Input placeholder="Placeholder" />
-        </Row>
       </Content>
     </Container>
   )

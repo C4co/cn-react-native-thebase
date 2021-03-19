@@ -6,7 +6,7 @@ export function HomeScreen(){
     <Container>
       <Content padder>
         <Text>
-          Home screen
+          The base
         </Text>
       </Content>
     </Container>
