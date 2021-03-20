@@ -6,3 +6,4 @@ declare module "styled-components" {
 
 export * from "./components/index"
 export * from "./themes/index"
+
