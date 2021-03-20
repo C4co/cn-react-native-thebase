@@ -1,6 +1,6 @@
 import { ThemeBase } from "./theme-type"
 
-export const DARK: ThemeBase = {
+export const THEME_DARK: ThemeBase = {
   NAME: "DARK",
   COLORS: {
     // Default
