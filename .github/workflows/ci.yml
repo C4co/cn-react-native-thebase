@@ -26,12 +26,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: cd ./example
-    - run: npm install
-    - run: cd ..
+    - run: npm install --prefix ./example
     - run: npm run prepare
     - run: npm pack
-    
-    
-    
     - run: npm test
+
+
+
