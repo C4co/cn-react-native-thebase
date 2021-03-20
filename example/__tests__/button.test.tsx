@@ -2,7 +2,7 @@ import React from "react"
 import "jest-styled-components"
 import { render } from "@testing-library/react-native"
 import { Button } from "../src/components"
-import { LIGHT } from  "../src/themes"
+import { THEME_LIGHT } from  "../src/themes"
 
 describe("Button test", () =>{
   test("Check initial rendering (solid button)", () => {
@@ -13,7 +13,7 @@ describe("Button test", () =>{
     expect(getByTestId("button-solid")).toBeTruthy()
     expect(getByTestId("button-label")).toBeTruthy()
     expect(getByText("Test Button")).toBeTruthy()
-    expect(getByTestId("button-solid").props.style.backgroundColor).toBe(LIGHT.COLORS.BUTTON_BACKGROUND)
+    expect(getByTestId("button-solid").props.style.backgroundColor).toBe(THEME_LIGHT.COLORS.BUTTON_BACKGROUND)
   })
 
   test("Check outline button", () => {
@@ -22,12 +22,12 @@ describe("Button test", () =>{
     )
 
     expect(getByTestId("button-outline").props.style.backgroundColor).toBe("transparent")
-    expect(getByTestId("button-outline-label").props.style[0].color).toBe(LIGHT.COLORS.BUTTON_BACKGROUND)
+    expect(getByTestId("button-outline-label").props.style[0].color).toBe(THEME_LIGHT.COLORS.BUTTON_BACKGROUND)
   })
 
   test("Check solid loading button", () => {
     const { queryByTestId, getByTestId } = render(
-      <Button theme={LIGHT} loading>Test Button</Button>
+      <Button theme={THEME_LIGHT} loading>Test Button</Button>
     )
 
     expect(queryByTestId("button-label")).toBeFalsy()
@@ -38,7 +38,7 @@ describe("Button test", () =>{
 
   test("Check outline solid button", () => {
     const { getByTestId } = render(
-      <Button theme={LIGHT} loading outline>Test Button</Button>
+      <Button theme={THEME_LIGHT} loading outline>Test Button</Button>
     )
 
     expect(getByTestId("button-outline-loading")).toBeTruthy()
