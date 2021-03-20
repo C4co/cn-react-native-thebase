@@ -1,5 +1,5 @@
 import styled, {css}  from "styled-components/native"
-import { LIGHT } from "../../themes"
+import { THEME_LIGHT } from "../../themes"
 
 type TextProps = {
   color?: string
@@ -44,7 +44,7 @@ export const Text = styled.Text<TextProps>`
   `}
 `
 
-Text.defaultProps = { theme: LIGHT }
+Text.defaultProps = { theme: THEME_LIGHT }
 
 type TitleProps = {
   color?: string
@@ -59,4 +59,4 @@ export const Title = styled(Text)<TitleProps>`
   `}
 `
 
-Title.defaultProps = { theme: LIGHT }
+Title.defaultProps = { theme: THEME_LIGHT }
