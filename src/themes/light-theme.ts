@@ -1,6 +1,6 @@
 import { ThemeBase } from "./theme-type"
 
-export const LIGHT: ThemeBase = {
+export const THEME_LIGHT: ThemeBase = {
   NAME: "LIGHT",
   COLORS: {
     // Default
