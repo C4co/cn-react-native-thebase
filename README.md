@@ -8,7 +8,7 @@
 
 ✅ Suport Themes
 
-[Check the exemple(expo application)](https://expo.io/@carlosnc/projects/thebase)
+[Check the exemple (expo application)](https://expo.io/@carlosnc/projects/thebase)
 
 ```
 npm install cn-react-native-thebase
@@ -18,7 +18,12 @@ npm install cn-react-native-thebase
 
 <details>
   <summary> Buttons </summary>
-  -- Button Content
+
+  ```jsx
+  import { Button } from "cn-react-native-thebase"
+
+  <Button> A Button <Button>
+  ```
 </details>
 
 ---
