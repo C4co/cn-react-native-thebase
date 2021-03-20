@@ -12,7 +12,6 @@
   ],
   "scripts": {
     "prepare": "bob build",
-    "test": "npm test --prefix ./example",
     "update": "@powershell .\\update.ps1"
   },
   "author": "c4co",
