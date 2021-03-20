@@ -2,7 +2,7 @@ import React from "react"
 import styled, { useTheme, css } from "styled-components/native"
 import { TextInputProps } from "react-native"
 
-export const InputWrapper = styled.View`
+const InputWrapper = styled.View`
   flex: 1;
 `
 
@@ -10,7 +10,7 @@ type InputDataProps = {
   error?: boolean
 }
 
-export const InputData = styled.TextInput<InputDataProps>`
+const InputData = styled.TextInput<InputDataProps>`
   border: solid ${props => props.theme.COLORS.INPUT_BORDER} 1px;
   background:  ${props => props.theme.COLORS.INPUT_BACKGROUND};
   color: ${props => props.theme.COLORS.INPUT_TEXT};
@@ -25,13 +25,13 @@ export const InputData = styled.TextInput<InputDataProps>`
   `}
 `
 
-export const InputLabel = styled.Text`
+const InputLabel = styled.Text`
   font-size: 12px;
   margin-bottom: 4px;
   color: ${props => props.theme.COLORS.INPUT_LABEL};
 `
 
-export const InputErrorMessage = styled.Text`
+const InputErrorMessage = styled.Text`
   font-size: 12px;
   font-style: italic;
   margin-top: 4px;
