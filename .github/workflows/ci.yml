@@ -27,5 +27,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run prepare
-    - run: npm run pack
+    - run: npm pack
     - run: npm test
