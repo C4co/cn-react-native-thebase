@@ -27,9 +27,15 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run prepare
+  
+    - name: Remove package-lock.json
+      working-directory: ./example
+      run: rm package-lock.json
+
     - name: Install example dependencies
       working-directory: ./example
       run: npm install
+  
     - name: Running tests
       working-directory: ./example
       run: npm tests
