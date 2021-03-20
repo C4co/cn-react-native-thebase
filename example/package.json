@@ -10,6 +10,9 @@
   },
   "jest": {
     "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation)/"
+    ],
     "setupFilesAfterEnv": [
       "@testing-library/jest-native/extend-expect"
     ]
@@ -19,6 +22,7 @@
     "@react-navigation/drawer": "^5.12.4",
     "@react-navigation/native": "^5.9.3",
     "@react-navigation/stack": "^5.14.3",
+    "cn-react-native-thebase": "file:../cn-react-native-thebase-1.0.1.tgz",
     "expo": "~40.0.0",
     "expo-status-bar": "~1.0.3",
     "polished": "^4.1.1",
@@ -29,13 +33,14 @@
     "react-native-reanimated": "^1.13.2",
     "react-native-safe-area-context": "^3.1.9",
     "react-native-screens": "^2.15.2",
-    "react-native-thebase": "file:../react-native-thebase-1.0.0.tgz",
     "react-native-web": "~0.13.12",
     "styled-components": "^5.2.1",
     "@expo/vector-icons": "^12.0.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
+    "@babel/preset-env": "^7.13.10",
     "@testing-library/jest-native": "^4.0.1",
     "@testing-library/react": "^11.2.5",
     "@testing-library/react-native": "^7.2.0",
@@ -46,6 +51,7 @@
     "@types/styled-components": "^5.1.7",
     "@types/styled-components-react-native": "^5.1.1",
     "babel-cli": "^6.26.0",
+    "babel-jest": "^26.6.3",
     "jest": "^26.6.3",
     "jest-styled-components": "^7.0.3",
     "react-test-renderer": "^17.0.1",
