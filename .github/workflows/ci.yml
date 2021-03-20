@@ -28,9 +28,11 @@ jobs:
     - run: npm ci
     - run: npm run prepare
     - run: npm pack
+    - name: Install example dependencies
+      working-directory: ./example
+      run: npm install
     - name: Running tests
       working-directory: ./example
-    - run: ls
-    - run: ls
+      run: npm tests
 
 
