@@ -1,7 +1,7 @@
 import React from "react"
 import { TouchableOpacityProps } from "react-native"
 import styled, { useTheme } from "styled-components/native"
-import { LIGHT } from "../../themes"
+import { THEME_LIGHT } from "../../themes"
 
 const ButtonSolid = styled.TouchableOpacity`
   padding: 0px 15px;
@@ -16,7 +16,7 @@ const ButtonSolid = styled.TouchableOpacity`
   background-color: ${props => props.theme.COLORS.BUTTON_BACKGROUND};
   overflow: hidden;
 `
-ButtonSolid.defaultProps = { theme: LIGHT }
+ButtonSolid.defaultProps = { theme: THEME_LIGHT }
 
 const ButtonSolidLoading = styled.View`
   padding: 0px 15px;
@@ -29,7 +29,7 @@ const ButtonSolidLoading = styled.View`
   overflow: hidden;
   opacity: 0.7;
 `
-ButtonSolidLoading.defaultProps = { theme: LIGHT }
+ButtonSolidLoading.defaultProps = { theme: THEME_LIGHT }
 
 const ButtonText = styled.Text`
   color: ${props => props.theme.COLORS.BUTTON_TEXT};
@@ -37,18 +37,18 @@ const ButtonText = styled.Text`
   text-transform: uppercase;
   font-weight: bold;
 `
-ButtonText.defaultProps = { theme: LIGHT }
+ButtonText.defaultProps = { theme: THEME_LIGHT }
 
 const ButtonOutline = styled(ButtonSolid)`
   border: solid ${props => props.theme.COLORS.BUTTON_BACKGROUND} 1px;
   background-color: transparent;
 `
-ButtonOutline.defaultProps = { theme: LIGHT }
+ButtonOutline.defaultProps = { theme: THEME_LIGHT }
 
 const ButtonOutlineLabel = styled(ButtonText)`
   color: ${props => props.theme.COLORS.BUTTON_BACKGROUND};
 `
-ButtonOutlineLabel.defaultProps = { theme: LIGHT }
+ButtonOutlineLabel.defaultProps = { theme: THEME_LIGHT }
 
 const Load = styled.ActivityIndicator`
   margin-right: 0px;
