@@ -80,3 +80,8 @@ npm install cn-react-native-thebase
   <summary> Switch </summary>
   ...
 </details>
+
+---
+
+MIT @ Carlos Costa | 2020
+
