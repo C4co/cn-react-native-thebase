@@ -2,7 +2,6 @@ import React, {useState} from "react"
 import {
   Container,
   Content,
-  Text,
   Button,
   Modal
 } from "../../src"
@@ -26,7 +25,6 @@ export function ModalScreen(){
         </Modal>
 
         <Button onPress={() => { setShowModal(true) }} > Open Modal </Button>
-
       </Content>
     </Container>
   )

@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { useTheme, css } from "styled-components/native"
 import { TextInputProps } from "react-native"
+import { THEME_LIGHT } from "../../themes"
 
 const InputWrapper = styled.View`
   flex: 1;
@@ -24,12 +25,14 @@ const InputData = styled.TextInput<InputDataProps>`
     border: solid ${props => props.theme.COLORS.INPUT_ERROR} 1px;
   `}
 `
+InputData.defaultProps = { theme: THEME_LIGHT }
 
 const InputLabel = styled.Text`
   font-size: 12px;
   margin-bottom: 4px;
   color: ${props => props.theme.COLORS.INPUT_LABEL};
 `
+InputLabel.defaultProps = { theme: THEME_LIGHT }
 
 const InputErrorMessage = styled.Text`
   font-size: 12px;
@@ -37,28 +40,35 @@ const InputErrorMessage = styled.Text`
   margin-top: 4px;
   color: ${props => props.theme.COLORS.INPUT_ERROR};
 `
+InputErrorMessage.defaultProps = { theme: THEME_LIGHT }
 
 interface InputProps extends TextInputProps{
   label?: string
   placeholder?: string
   errorMessage?: string
-  error?: boolean
+  error?: boolean,
+  theme?: any
 }
 
 export function Input(props: InputProps){
-  const theme = useTheme()
+  let theme = useTheme()
+
+  if(!theme){
+    theme = props.theme
+  }
 
   return (
-    <InputWrapper>
+    <InputWrapper testID="input-wrapper">
       {
         props.label &&
-          <InputLabel>
+          <InputLabel testID="input-label">
             {props.label}
           </InputLabel>
       }
 
       <InputData
         {...props}
+        testID="input-data"
         error={props.error}
         placeholderTextColor={theme.COLORS.INPUT_PLACEHOLDER}
         placeholder={props.placeholder}
@@ -66,7 +76,7 @@ export function Input(props: InputProps){
 
       {
         props.errorMessage &&
-          <InputErrorMessage>
+          <InputErrorMessage testID="input-error-message">
             {props.errorMessage}
           </InputErrorMessage>
       }

@@ -4,7 +4,7 @@ import { render } from "@testing-library/react-native"
 import { Button } from "../src/components"
 import { THEME_LIGHT } from  "../src/themes"
 
-describe("Button test", () =>{
+describe("<Button>", () =>{
   test("Check initial rendering (solid button)", () => {
     const { getByTestId, getByText } = render(
       <Button>Test Button</Button>
@@ -36,7 +36,7 @@ describe("Button test", () =>{
     expect(getByTestId("button-load")).toBeTruthy()
   })
 
-  test("Check outline solid button", () => {
+  test("Check outline load button", () => {
     const { getByTestId } = render(
       <Button theme={THEME_LIGHT} loading outline>Test Button</Button>
     )
