@@ -3,7 +3,7 @@
 [![Node.js CI](https://github.com/C4co/cn-react-native-thebase/actions/workflows/ci.yml/badge.svg)](https://github.com/C4co/cn-react-native-thebase/actions/workflows/ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/C4co/cn-react-native-thebase/badge.svg?branch=master)](https://coveralls.io/github/C4co/cn-react-native-thebase?branch=master)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-[![Check live example](https://img.shields.io/badge/Runs%20with%20Expo-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/@carlosnc/projects/thebase)
+[![Check live example](https://img.shields.io/badge/Example%20with%20Expo-4630EB.svg?style=flat&logo=EXPO&labelColor=000000&logoColor=ffffff)](https://expo.io/@carlosnc/projects/thebase)
 
 <p>
   Some basic components to start a new react native app
