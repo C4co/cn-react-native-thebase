@@ -27,6 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run prepare
+    - run: npm pack
   
     - name: Remove package-lock.json
       working-directory: ./example
@@ -38,6 +39,12 @@ jobs:
   
     - name: Running tests
       working-directory: ./example
-      run: npm tests
+      run: npm test
+    
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        path-to-lcov: ./example/coverage/lcov.info
+        github-token: ${{ secrets.GITHUB_TOKEN }}
 
 

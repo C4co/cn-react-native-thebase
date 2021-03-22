@@ -1,4 +1,7 @@
-<h1> React Native TheBase (Under construction) </h1>
+<h1> React Native TheBase </h1>
+
+[![Node.js CI](https://github.com/C4co/cn-react-native-thebase/actions/workflows/ci.yml/badge.svg)](https://github.com/C4co/cn-react-native-thebase/actions/workflows/ci.yml)
+[![Coverage Status](https://coveralls.io/repos/github/C4co/cn-react-native-thebase/badge.svg?branch=master)](https://coveralls.io/github/C4co/cn-react-native-thebase?branch=master)
 
 <p>
   Some basic components to start a new react native app
