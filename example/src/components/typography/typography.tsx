@@ -9,11 +9,29 @@ type TextProps = {
   fontSize?: number
   capitalize?: boolean
   underline?: boolean
+  textAlign?: "center" | "left" | "right"
+  width?: number
 }
 
 export const Text = styled.Text<TextProps>`
   font-size: 15px;
   color: ${props => props.theme.COLORS.TEXT};
+
+  ${props => props.textAlign === "center" && css`
+    text-align: center;
+  `}
+
+  ${props => props.textAlign === "left" && css`
+    text-align: left;
+  `}
+
+  ${props => props.textAlign === "right" && css`
+    text-align: right;
+  `}
+
+  ${props => props.width && css`
+    width: ${props.width}px;
+  `}
 
   ${props => props.color && css`
     color: ${props.color}
