@@ -21,8 +21,6 @@ npm install cn-react-native-thebase
 
 ## Components
 
-[![supports Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www)
-
 <details>
   <summary> Buttons </summary>
   ...
