@@ -19,6 +19,12 @@
 npm install cn-react-native-thebase
 ```
 
+## Support and tested platforms
+
+| Android | Ios | Web |
+|---------|-----|-----|
+| ✅      | ❌    | ❌    |
+
 ## Components
 
 <details>
