@@ -36,14 +36,28 @@ npm install cn-react-native-thebase
 ---
 
 <details>
-  <summary> Page </summary>
+  <summary> Content </summary>
   ...
 </details>
 
 ---
 
 <details>
-  <summary> Grid </summary>
+  <summary> Container </summary>
+  ...
+</details>
+
+---
+
+<details>
+  <summary> Row </summary>
+  ...
+</details>
+
+---
+
+<details>
+  <summary> Space </summary>
   ...
 </details>
 
