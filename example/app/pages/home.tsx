@@ -33,7 +33,9 @@ export function HomeScreen(){
 
         <Space size={30} />
 
-        <Title fontSize={35}> TheBase </Title>
+        <Title fontSize={35}>
+          TheBase
+        </Title>
 
         <Space size={10} />
 
