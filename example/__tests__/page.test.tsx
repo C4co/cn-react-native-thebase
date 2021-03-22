@@ -7,7 +7,7 @@ describe("<Container/> & <Content/>",() => {
   test("Check initial render", () => {
     const { getByTestId } = render(
       <Container testID="container">
-        <Content testID="content">
+        <Content padder testID="content">
           <Text testID="text">Page test</Text>
         </Content>
       </Container>
