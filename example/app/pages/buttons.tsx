@@ -11,47 +11,47 @@ export function ButtonsScreen(){
   return (
     <Container>
       <Content padder>
-        <Button> Normal button  </Button>
+        <Button onPress={() => {}}> Normal button  </Button>
         <Space size={10} />
         <Button loading />
         <Space size={10} />
-        <Button outline> Button outline  </Button>
+        <Button onPress={() => {}} outline> Button outline  </Button>
         <Space size={10} />
         <Button outline loading> Button outline  </Button>
         <Space size={10} />
 
         <Row>
-          <Button> button </Button>
+          <Button onPress={() => {}}> button </Button>
           <Space size={10} horizontal />
-          <Button> button </Button>
+          <Button onPress={() => {}}> button </Button>
         </Row>
 
         <Space size={10} />
 
         <Row>
-          <Button> button </Button>
+          <Button onPress={() => {}}> button </Button>
           <Space size={10} horizontal />
-          <Button> button </Button>
+          <Button onPress={() => {}}> button </Button>
           <Space size={10} horizontal />
-          <Button> button </Button>
+          <Button onPress={() => {}}> button </Button>
         </Row>
 
         <Space size={10} />
 
         <Row>
-          <Button outline> button </Button>
+          <Button onPress={() => {}} outline> button </Button>
           <Space size={10} horizontal />
-          <Button outline> button </Button>
+          <Button onPress={() => {}} outline> button </Button>
         </Row>
 
         <Space size={10} />
 
         <Row>
-          <Button outline> button </Button>
+          <Button onPress={() => {}} outline> button </Button>
           <Space size={10} horizontal />
-          <Button outline> button </Button>
+          <Button onPress={() => {}} outline> button </Button>
           <Space size={10} horizontal />
-          <Button outline> button </Button>
+          <Button onPress={() => {}} outline> button </Button>
         </Row>
       </Content>
     </Container>
