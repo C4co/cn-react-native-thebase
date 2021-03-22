@@ -22,12 +22,7 @@ npm install cn-react-native-thebase
 
 <details>
   <summary> Buttons </summary>
-
-  ```jsx
-  import { Button } from "cn-react-native-thebase"
-
-  <Button> A Button <Button>
-  ```
+  ...
 </details>
 
 ---
@@ -41,30 +36,26 @@ npm install cn-react-native-thebase
 
 <details>
   <summary> Page </summary>
-  -- Page Content
+  ...
 </details>
 
 ---
 
 <details>
   <summary> Grid </summary>
-  -- Grid Content
+  ...
 </details>
 
 ---
 
 <details>
   <summary> Modal </summary>
-  -- Modal Content
+  ...
 </details>
 
 ---
 
 <details>
   <summary> Switch </summary>
-  -- Switch Content
+  ...
 </details>
-
-
-## Development
-
