@@ -1,6 +1,7 @@
 import styled, { useTheme } from "styled-components/native"
 import React from "react"
 import { SwitchProps as ReactSwitchProps } from "react-native"
+import { THEME_LIGHT } from "../../themes"
 
 const SwitchWrapper = styled.View`
   justify-content: space-around;
@@ -12,6 +13,7 @@ const SwitchWrapper = styled.View`
   border-style: solid;
   border-bottom-color: ${props => props.theme.COLORS.BORDER} ;
 `
+SwitchWrapper.defaultProps = { theme: THEME_LIGHT }
 
 const SwitchLabel = styled.Text`
   flex: 1;
@@ -21,6 +23,7 @@ const SwitchLabel = styled.Text`
   margin-right: 15px;
   color: ${props => props.theme.COLORS.TEXT} ;
 `
+SwitchLabel.defaultProps = { theme: THEME_LIGHT }
 
 const SwitchData = styled.Switch`
   width: 56px;
@@ -29,18 +32,24 @@ const SwitchData = styled.Switch`
 interface SwitchProps extends ReactSwitchProps {
   label: string,
   value?: boolean,
+  theme?: any
 }
 
 export function Switch(props: SwitchProps){
-  const theme = useTheme()
+  let theme = useTheme()
+
+  if(!theme){
+    theme = props.theme
+  }
 
   return (
-    <SwitchWrapper>
-      <SwitchLabel>
+    <SwitchWrapper testID="switch-wrapper">
+      <SwitchLabel testID="switch-label">
       { props.label }
       </SwitchLabel>
       <SwitchData
         {...props}
+        testID="switch-data"
         trackColor={{
           true: theme.COLORS.SWITCH_TRACK,
           false: theme.COLORS.SWITCH_TRACK
