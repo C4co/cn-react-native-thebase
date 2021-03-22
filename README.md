@@ -29,7 +29,7 @@ npm install cn-react-native-thebase
 
 <details>
   <summary> Inputs </summary>
-  -- Input Content
+  ...
 </details>
 
 ---
