@@ -5,6 +5,8 @@
   "main": "dist/module/index.js",
   "module": "dist/module/index.js",
   "react-native": "dist/module/index.js",
+  "repository": "C4co/cn-react-native-thebase",
+  "keywords": ["react-native", "components"],
   "types": "dist/typescript/index.d.ts",
   "files": [
     "src",
