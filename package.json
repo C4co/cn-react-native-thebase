@@ -15,7 +15,7 @@
     "update": "@powershell .\\update.ps1"
   },
   "author": "c4co",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "polished": "^4.1.1",
     "styled-components": "^5.2.1"
