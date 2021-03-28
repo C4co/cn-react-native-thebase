@@ -8,7 +8,8 @@ import {
   InputScreen,
   SwicthScreen,
   GridScreen,
-  ModalScreen
+  ModalScreen,
+  AllComponents,
 } from "../pages"
 import { useTheme } from "styled-components/native"
 import { Feather } from "@expo/vector-icons"
@@ -41,7 +42,6 @@ export function Routes(props: RoutesProps) {
     headerShown: true,
     headerTintColor: theme.COLORS.TITLE,
     headerStyle: {
-      elevation: 0,
       backgroundColor: theme.COLORS.BACKGROUND
     },
     headerRight: () => {
@@ -66,6 +66,7 @@ export function Routes(props: RoutesProps) {
           width: 240,
         }}>
         <Drawer.Screen options={options} name="Home" component={HomeScreen} />
+        <Drawer.Screen options={options} name="All components" component={AllComponents} />
         <Drawer.Screen options={options} name="Buttons" component={ButtonsScreen} />
         <Drawer.Screen options={options} name="Typography" component={TypographyScreen} />
         <Drawer.Screen options={options} name="Inputs" component={InputScreen} />
