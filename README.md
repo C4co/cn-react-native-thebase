@@ -52,6 +52,16 @@ export default function App() {
 }
 
 ```
+## Components
+
+- **[Button](https://github.com/C4co/cn-react-native-thebase/wiki/Buttons)**
+- Input
+- Container
+- Content
+- Row
+- Space
+- Modal
+- Switch
 
 ## Development
 
