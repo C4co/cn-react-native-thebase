@@ -116,22 +116,22 @@ export default function App() {
 
 Updating main components
 ```
-  npm run update
+npm run update
 ```
 
 Compile and generate package files
 ```
-  npm run prepate
+npm run prepate
 ```
 
 Generate a .tgz package to tests
 ```
-  npm pack
+npm pack
 ```
 
 Publishing to NPM
 ```
-  npm publish
+npm publish
 ```
 
 ---
