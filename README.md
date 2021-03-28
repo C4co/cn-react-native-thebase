@@ -40,7 +40,7 @@ Wrap aplication with ```<ThemeProvider/>``` from styled-components
 
 ```jsx
 import React from "react"
-import { THEME_LIGHT } from "./src"
+import { THEME_LIGHT } from "cn-react-native-thebase"
 import { ThemeProvider } from "styled-components"
 
 export default function App() {
