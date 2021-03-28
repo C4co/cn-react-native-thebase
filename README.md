@@ -16,7 +16,14 @@
 [Check the exemple (expo application)](https://expo.io/@carlosnc/projects/thebase)
 
 ```
-npm install cn-react-native-thebase
+npm install cn-react-native-thebase styled-components
+```
+
+if you are using typescript with react-native use:
+
+```
+npm install cn-react-native-thebase styled-components
+npm install --save-dev @types/styled-components-react-native
 ```
 
 ## Support and tested platforms
@@ -24,6 +31,27 @@ npm install cn-react-native-thebase
 | Android | Ios | Web |
 |---------|-----|-----|
 | ✅      | ❌    | ❌    |
+
+## Dependêncies
+[Styled components](https://styled-components.com/)
+
+## First Step
+Wrap aplication with ```<ThemeProvider/>``` from styled-components
+
+```jsx
+import React from "react"
+import { THEME_LIGHT } from "./src"
+import { ThemeProvider } from "styled-components"
+
+export default function App() {
+  return (
+    <ThemeProvider theme={THEME_LIGHT}>
+      {/* Your app */}
+    </ThemeProvider>
+  )
+}
+
+```
 
 ## Components
 
