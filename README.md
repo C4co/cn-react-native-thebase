@@ -53,63 +53,6 @@ export default function App() {
 
 ```
 
-## Components
-
-<details>
-  <summary> Buttons </summary>
-  ...
-</details>
-
----
-
-<details>
-  <summary> Inputs </summary>
-  ...
-</details>
-
----
-
-<details>
-  <summary> Content </summary>
-  ...
-</details>
-
----
-
-<details>
-  <summary> Container </summary>
-  ...
-</details>
-
----
-
-<details>
-  <summary> Row </summary>
-  ...
-</details>
-
----
-
-<details>
-  <summary> Space </summary>
-  ...
-</details>
-
----
-
-<details>
-  <summary> Modal </summary>
-  ...
-</details>
-
----
-
-<details>
-  <summary> Switch </summary>
-  ...
-</details>
-
-
 ## Development
 
 **Publishing a new version**
