@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components/native"
-import { StatusBar } from "react-native"
 import { THEME_LIGHT } from "../../themes"
 
 export const Container = styled.View`
@@ -17,7 +16,9 @@ export const Content = styled.ScrollView<ContentProps>`
   flex: 1;
 
   ${props => props.padder && css`
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
   `}
 `
 Content.defaultProps = { theme: THEME_LIGHT }

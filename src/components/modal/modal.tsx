@@ -19,7 +19,9 @@ const ModalContent = styled.ScrollView<ModalContentProps>`
   flex: 1px;
 
   ${props => props.padder && css`
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
   `}
 `
 ModalContent.defaultProps = { theme: THEME_LIGHT }
