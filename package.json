@@ -6,7 +6,10 @@
   "module": "dist/module/index.js",
   "react-native": "dist/module/index.js",
   "repository": "C4co/cn-react-native-thebase",
-  "keywords": ["react-native", "components"],
+  "keywords": [
+    "react-native",
+    "components"
+  ],
   "types": "dist/typescript/index.d.ts",
   "files": [
     "src",
@@ -27,7 +30,6 @@
     "@react-native-community/bob": "^0.17.1",
     "@types/react": "^17.0.2",
     "@types/react-native": "^0.63.50",
-    "@types/styled-components": "^5.1.7",
     "@types/styled-components-react-native": "^5.1.1",
     "typescript": "^4.2.2"
   },
