@@ -40,7 +40,7 @@ Wrap aplication with ```<ThemeProvider/>``` from styled-components
 
 ```jsx
 import React from "react"
-import { THEME_LIGHT } from "./src"
+import { THEME_LIGHT } from "cn-react-native-thebase"
 import { ThemeProvider } from "styled-components"
 
 export default function App() {
@@ -109,7 +109,31 @@ export default function App() {
   ...
 </details>
 
+
+## Development
+
+**Publishing a new version**
+
+Updating main components
+```
+  npm run update
+```
+
+Compile and generate package files
+```
+  npm run prepate
+```
+
+Generate a .tgz package to tests
+```
+  npm pack
+```
+
+Publishing to NPM
+```
+  npm publish
+```
+
 ---
 
 MIT @ Carlos Costa | 2020
-
