@@ -22,3 +22,9 @@ export const Content = styled.ScrollView<ContentProps>`
   `}
 `
 Content.defaultProps = { theme: THEME_LIGHT }
+
+export const Center = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`
