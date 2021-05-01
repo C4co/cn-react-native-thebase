@@ -18,7 +18,7 @@ export default function App() {
           setAppTheme(THEME_LIGHT)
         }
       }} />
-      <StatusBar style="auto" />
+      <StatusBar style={appTheme.NAME === "DARK" ? "light" : "dark"} />
     </ThemeProvider>
   )
 }
