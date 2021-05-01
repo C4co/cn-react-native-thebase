@@ -6,7 +6,7 @@ import { THEME_LIGHT } from "../../themes/"
 const ModalContainer = styled.View`
   width: 100%;
   flex: 1px;
-  padding-top: 30px;
+  padding-top: 1px;
   background-color: rgba(0, 0, 0, 0.3);
 `
 
