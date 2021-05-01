@@ -24,7 +24,7 @@
     "@react-navigation/drawer": "^5.12.4",
     "@react-navigation/native": "^5.9.3",
     "@react-navigation/stack": "^5.14.3",
-    "cn-react-native-thebase": "file:../cn-react-native-thebase-1.0.3.tgz",
+    "cn-react-native-thebase": "file:../cn-react-native-thebase-1.0.4.tgz",
     "expo": "~40.0.0",
     "expo-status-bar": "~1.0.3",
     "polished": "^4.1.1",

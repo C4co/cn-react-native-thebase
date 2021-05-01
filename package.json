@@ -1,6 +1,6 @@
 {
   "name": "cn-react-native-thebase",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Some basic components to start a new react native app",
   "main": "dist/module/index.js",
   "module": "dist/module/index.js",

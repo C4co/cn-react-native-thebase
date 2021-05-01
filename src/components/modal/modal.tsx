@@ -6,7 +6,7 @@ import { THEME_LIGHT } from "../../themes/"
 const ModalContainer = styled.View`
   width: 100%;
   flex: 1px;
-  padding-top: 30px;
+  padding-top: 1px;
   background-color: rgba(0, 0, 0, 0.3);
 `
 
@@ -16,7 +16,6 @@ type ModalContentProps = {
 
 const ModalContent = styled.ScrollView<ModalContentProps>`
   background: ${props => props.theme.COLORS.BACKGROUND};
-  flex: 1px;
 
   ${props => props.padder && css`
     padding-left: 15px;
